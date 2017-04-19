@@ -1,9 +1,14 @@
-# api documentation for  [gulp-image (v2.7.6)](https://github.com/1000ch/gulp-image#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-image.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-image) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-image.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-image)
+# npmdoc-gulp-image
+
+#### api documentation for  [gulp-image (v2.7.6)](https://github.com/1000ch/gulp-image#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-image.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-image) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-image.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-image)
+
 #### Optimize PNG, JPG, GIF, SVG images with gulp task.
 
-[![NPM](https://nodei.co/npm/gulp-image.png?downloads=true)](https://www.npmjs.com/package/gulp-image)
+[![NPM](https://nodei.co/npm/gulp-image.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/gulp-image)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-image/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-gulp-image_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-image/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-gulp-image/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-gulp-image/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-image/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-image/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-gulp-image/build/screenCapture.npmPackageListing.svg)
 
@@ -18,7 +23,6 @@
 {
     "author": {
         "name": "1000ch",
-        "email": "shogo.sensui@gmail.com",
         "url": "https://github.com/1000ch"
     },
     "bugs": {
@@ -73,13 +77,11 @@
     "license": "MIT",
     "maintainers": [
         {
-            "name": "1000ch",
-            "email": "orz1000ch@gmail.com"
+            "name": "1000ch"
         }
     ],
     "name": "gulp-image",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/1000ch/gulp-image.git"
@@ -90,16 +92,6 @@
     "version": "2.7.6"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module gulp-image](#apidoc.module.gulp-image)
-
-
-
-# <a name="apidoc.module.gulp-image"></a>[module gulp-image](#apidoc.module.gulp-image)
 
 
 
