@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/1000ch/gulp-image#readme"
-
-    >gulp-image (v2.7.6)</a>
+    <a href="https://github.com/1000ch/gulp-image#readme">gulp-image (v2.7.6)</a>
 </h1>
 <h4>Optimize PNG, JPG, GIF, SVG images with gulp task.</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.gulp-image">module gulp-image</a><ol>
 
@@ -85,19 +78,19 @@
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">options =&#x3e; through2.obj({ maxConcurrency: options ? options.concurrent : null }, (file, enc, callback) =&#x3e; {
+    <li>description and source-code<pre class="apidocCodePre">options =&gt; through2.obj({ maxConcurrency: options ? options.concurrent : null }, (file, enc, callback) =&gt; {
   if (file.isNull()) {
     return callback(null, file);
   }
 
   if (file.isStream()) {
-    return callback(new Error(&#x27;gulp-image: Streaming is not supported&#x27;));
+    return callback(new Error('gulp-image: Streaming is not supported'));
   }
 
   const extension = path.extname(file.path).toLowerCase();
 
-  if ([&#x27;.jpg&#x27;, &#x27;.jpeg&#x27;, &#x27;.png&#x27;, &#x27;.gif&#x27;, &#x27;.svg&#x27;].indexOf(extension) === -1) {
-    gutil.log(&#x27;gulp-image: Skipping unsupported image &#x27; + gutil.colors.blue(file.relative));
+  if (['.jpg', '.jpeg', '.png', '.gif', '.svg'].indexOf(extension) === -1) {
+    gutil.log('gulp-image: Skipping unsupported image ' + gutil.colors.blue(file.relative));
     return callback(null, file);
   }
 
@@ -110,31 +103,31 @@
     mozjpeg        : true,
     gifsicle       : true,
     svgo           : true
-  }, options)).then(buffer =&#x3e; {
+  }, options)).then(buffer =&gt; {
     const before = file.contents.length;
     const after = buffer.length;
     const diff = before - after;
     const diffPercent = round10(100 * (diff / before), -1);
 
-    if (diff &#x3c;= 0) {
+    if (diff &lt;= 0) {
       gutil.log(
-        gutil.colors.green(&#x27;- &#x27;) + file.relative + gutil.colors.gray(&#x27; -&#x3e;&#x27;) +
-        gutil.colors.gray(&#x27; Cannot improve upon &#x27;) + gutil.colors.cyan(filesize(before))
+        gutil.colors.green('- ') + file.relative + gutil.colors.gray(' -&gt;') +
+        gutil.colors.gray(' Cannot improve upon ') + gutil.colors.cyan(filesize(before))
       );
     } else {
       file.contents = buffer;
 
       gutil.log(
-        gutil.colors.green(&#x27;✔ &#x27;) + file.relative + gutil.colors.gray(&#x27; -&#x3e;&#x27;) +
-        gutil.colors.gray(&#x27; before=&#x27;) + gutil.colors.yellow(filesize(before)) +
-        gutil.colors.gray(&#x27; after=&#x27;) + gutil.colors.cyan(filesize(after)) +
-        gutil.colors.gray(&#x27; reduced=&#x27;) + gutil.colors.green.underline(filesize(diff) + &#x27;(&#x27; + diffPercent + &#x27;%)&#x27;)
+        gutil.colors.green('âœ” ') + file.relative + gutil.colors.gray(' -&gt;') +
+        gutil.colors.gray(' before=') + gutil.colors.yellow(filesize(before)) +
+        gutil.colors.gray(' after=') + gutil.colors.cyan(filesize(after)) +
+        gutil.colors.gray(' reduced=') + gutil.colors.green.underline(filesize(diff) + '(' + diffPercent + '%)')
       );
     }
 
     callback(null, file);
-  }).catch(error =&#x3e; {
-    callback(new gutil.PluginError(&#x27;gulp-image&#x27;, error));
+  }).catch(error =&gt; {
+    callback(new gutil.PluginError('gulp-image', error));
   });
 })</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -149,3 +142,4 @@
     ]
 </div>
 </div>
+</body></html>
